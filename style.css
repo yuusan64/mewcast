@@ -13,12 +13,12 @@ body {
 }
 
 .weather-app {
-    max-width: 600px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Fixed width for consistent card size */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -30,7 +30,8 @@ body {
     margin-bottom: 20px;
 }
 
-.search-area input, .search-area button {
+.search-area input,
+.search-area button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -49,13 +50,6 @@ body {
     background-color: #6dd5ed;
 }
 
-.weather-info {
-    text-align: left;
-    padding: 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-}
-
 .weather-header h2 {
     margin-top: 0;
 }
@@ -72,4 +66,6 @@ body {
     line-height: 1.6;
 }
 
-
+.weather-body p span {
+    font-weight: bold;
+}
